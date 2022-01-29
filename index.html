@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <title>index.html1</title>
 	<style>
+		#colorlist{color: aqua}
+		
+		.leftcol{background-color: yellow}
 	</style>
 </head>
 
@@ -19,13 +22,13 @@
 	<hr>
 	
 	<h3>Fun Fact!</h3>
-	<p><b>I really love <a href="https://www.youtube.com/watch?v=dqT-UlYlg1s">pandas!</a> I think they're so cute!</b></p>
+	<p><b>I really love <a href="https://www.youtube.com/watch?v=dqT-UlYlg1s">pandas!</a> I think they're so <a href="internallink.html">cute!</a></b></p>
 	<img src="images/panda.jpg" alt="panda">
 	
 	<table style="width: 65%; border: 1px solid black; ">
 		
 		<tr>
-		<th style="color: aliceblue">Giant Pandas</th>
+		<th class="leftcol" style="color: red">Giant Pandas</th>
 		</tr>
 		
 		<tr>	
@@ -40,5 +43,16 @@
 	</table>
 	<hr>
 	
+	<h4 id="colorlist">Colors</h4>
+	<ul>
+		<li style="color: aliceblue">white</li>
+		<li style="color: orange">orange</li>
+		<li style="color: purple">purple</li>
+	</ul>
+	
 </body>
+	
+	<script>
+	document.getElementById("colorlist").innerHTML = "colors";
+	</script>
 </html>
